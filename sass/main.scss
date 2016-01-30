@@ -22,7 +22,7 @@
     width:  $item-size;
     height: $item-size;
     margin: -($item-size / 2); //original is 2 for <img>s
-  
+
     $angle: (360 / $item-count);
     $rot: 0;
 
@@ -39,15 +39,7 @@
   }
 }
 
-//ranomizes border color
-$rainbow: #a8e6cf, #dcedc1, #ffd3b6, #ffaaa5, #ff8b94, #add8e6;
 
-@for $i from 1 through length($rainbow) {
-    li:nth-child(#{length($rainbow)}n+#{$i}) { //applies to tag in this line
-        border: solid 5px nth($rainbow, random(length($rainbow)));
-        border-radius: 50%;
-    }
-}
 
 
 //calls circle maker mix-in
@@ -63,8 +55,13 @@ $rainbow: #a8e6cf, #dcedc1, #ffd3b6, #ffaaa5, #ff8b94, #add8e6;
     width: 70%;
     height: 70%; 
     transition: .15s;
-    padding: 12px;
+    padding: 10px;
   }
+}
+
+.svgeez {
+  border: 5px solid lightblue;
+  border-radius: 50%;
 }
 
 //footer
