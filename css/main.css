@@ -68,35 +68,3 @@
     color: #ff8b94; }
   #iconCreditLine span {
     color: #add8e6; }
-  .circle-container > *:nth-of-type(11) {
-      -webkit-transform: rotate(300deg) translate(17.5em) rotate(-300deg);
-      transform: rotate(300deg) translate(17.5em) rotate(-300deg); }
-    .circle-container > *:nth-of-type(12) {
-      -webkit-transform: rotate(330deg) translate(17.5em) rotate(-330deg);
-      transform: rotate(330deg) translate(17.5em) rotate(-330deg); }
-  .circle-container img {
-    width: 70%;
-    height: 70%;
-    transition: .15s;
-    padding: 10px; }
-
-.svgeez {
-  border: 5px solid lightblue;
-  border-radius: 50%; }
-
-#iconCreditLine {
-  text-align: center;
-  font-size: 0.3em;
-  font-family: helvetica;
-  width: 40%;
-  margin-top: 200px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
-  padding: 10px;
-  border-radius: 10%; }
-  #iconCreditLine a {
-    text-decoration: none;
-    color: #ff8b94; }
-  #iconCreditLine span {
-    color: #add8e6; }
