@@ -1,69 +1,10 @@
-
-/// Mixin to place items on a circle
-/// @author Hugo Giraudel
-/// @author Ana Tudor
-/// @param {Integer} $item-count - Number of items on the circle
-/// @param {Length} $circle-size - Large circle size
-/// @param {Length} $item-size - Single item size
-@mixin on-circle($item-count, $circle-size, $item-size) {
-  position: relative;
-  width:  $circle-size;
-  height: $circle-size;
-  border-radius: 50%; 
-  list-style: none;  
-  margin: 0 auto;
-
-  
-  > * {
-    display: block;
-    position: absolute;
-    top:  50%; 
-    left: 50%;
-    width:  $item-size;
-    height: $item-size;
-    margin: -($item-size / 2); //original is 2 for <img>s
-
-    $angle: (360 / $item-count);
-    $rot: 0;
-
-    @for $i from 1 through $item-count {
-      &:nth-of-type(#{$i}) {
-        transform: 
-          rotate($rot * 1deg) 
-          translate($circle-size / 2) 
-          rotate($rot * -1deg);
-      }
-
-      $rot: $rot + $angle;
-    }
-  }
-}
-
-
-body {
-  background-color: limegreen;
-}
-
-//calls circle maker mix-in
-.circle-container {
-  @include on-circle($item-count: 12, $circle-size: 35em, $item-size: 5em);  
-  width: 350px;
-  height: 380px;
-  margin-top: 190px;
-  border: solid 6px #dcedc1; //"draws" a center circle, just bump size
-  background-image: url(../images/woody.jpg);
-
-  img { 
-    width: 70%;
-    height: 70%; 
-    transition: .15s;
-    padding: 10px;
-  }
-}
-
+@import "bourbon/_bourbon.scss";
+@import "neat/_neat.scss";
 .svgeez {
   border: 5px solid lightblue;
-  border-radius: 50%;
+  list-style: none;
+  padding: 10px;
+  margin-bottom: 30px;
 }
 
 //footer
