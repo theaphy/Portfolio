@@ -1,21 +1,102 @@
+@font-face {
+  font-family: 'Bebas';
+  src: url(../fonts/Bebas/BEBAS___.ttf); }
+
 html {
   box-sizing: border-box; }
 
 *, *::after, *::before {
   box-sizing: inherit; }
 
+#head {
+  font-size: 10em;
+  text-align: center;
+  font-family: "Bebas"; }
+
+#mainer {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto; }
+  #mainer::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+#rowOne, #rowTwo, #rowThree {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-top: 10px; }
+  #rowOne:last-child, #rowTwo:last-child, #rowThree:last-child {
+    margin-right: 0; }
+
+#one, #two, #three, #four {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%; }
+  #one:last-child, #two:last-child, #three:last-child, #four:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 1100px) {
+    #one, #two, #three, #four {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      #one:last-child, #two:last-child, #three:last-child, #four:last-child {
+        margin-right: 0; } }
+
+#five, #six, #seven, #eight {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%; }
+  #five:last-child, #six:last-child, #seven:last-child, #eight:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 1100px) {
+    #five, #six, #seven, #eight {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      #five:last-child, #six:last-child, #seven:last-child, #eight:last-child {
+        margin-right: 0; } }
+
+#nine, #ten, #eleven, #twelve {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%; }
+  #nine:last-child, #ten:last-child, #eleven:last-child, #twelve:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 1100px) {
+    #nine, #ten, #eleven, #twelve {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      #nine:last-child, #ten:last-child, #eleven:last-child, #twelve:last-child {
+        margin-right: 0; } }
+
 .svgeez {
   border: 5px solid lightblue;
   list-style: none;
-  padding: 10px;
   margin-bottom: 30px; }
+
+img {
+  width: 7em;
+  height: 7em;
+  padding: 20px;
+  margin-left: 0.5em;
+  width: 500px;
+  height: 500px; }
 
 #iconCreditLine {
   text-align: center;
   font-size: 0.3em;
   font-family: helvetica;
   width: 40%;
-  margin-top: 200px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
