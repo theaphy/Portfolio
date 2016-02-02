@@ -24,33 +24,43 @@ $primarySkin: pink;
 
 // start Neat grid
 #mainer{
-  @include outer-container(800px);
-  @include media("≥desktop"){
-
-  }
+  @include outer-container(680px);
+  position: relative;
 }
 
 #rowOne, #rowTwo {
   @include span-columns(12 of 12);
+
+  //desktop breakpoint query
   @include media("≥desktop"){
     @include span-columns (6 of 12);
 
+    #head {
+      font-size: 6px;
+    
+    }
+
     img {
-      width: 10em;
-      height: 10em;
+      width: 7em;
+      height: 7em;
+      background-color: lightgreen;
+      margin-left: 40px;
+      margin-right: 0px;
+    }
+
+    .wurdz {
+      text-align: center;
+      background-color: lightblue;
+      font-size: 4em;
+    }
+
+    .svgeez {
     }
 
     #one {
-      img {
-      
-      margin-left: 0px;
-      }
     }
 
     #two {
-      img {
-       
-      }
     }
 
     #three {
@@ -59,12 +69,10 @@ $primarySkin: pink;
     #four {
     }
 
-    .wurdz {
-        font-size: 6em;
-    }
   }
 }
 
+//out of desktop query
 #one, #two, #three, #four {
   @include span-columns(12 of 12);
 }
@@ -75,10 +83,6 @@ $primarySkin: pink;
   margin-bottom: 10px;
 }
 
-
-
-
-
 // vector style
 img {
   float: left;
@@ -86,7 +90,7 @@ img {
   width: 14em;
   height: 14em;
   background-color: $primarySkin;
-  margin: 0px 10px 20px 0px;
+  margin: 0px 30px 0px 80px;
   border-radius: 50%;
   border: 5px solid black;
 }
