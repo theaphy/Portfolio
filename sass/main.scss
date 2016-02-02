@@ -92,16 +92,24 @@ img {
 //desktop breakpoint query
 @include media("≥desktop"){
   #head {
+    // position: relative;
     margin-top: 20px;
     font-size: 7em;
     background-image: url(../images/bigWaterTower.jpg);
     background-size: 876px 318px;
     background-repeat: false;
     background-position: 0% 20%;
+    height: 300px;
   }
 
   #head span {
-    margin-left: 200px;
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 70px;
+  }
+
+  #mainer {
+    margin-bottom: 70px;
   }
 
   #rowOne, #rowTwo {
