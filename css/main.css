@@ -9,6 +9,7 @@ html {
   box-sizing: inherit; }
 
 #head {
+  margin-top: 0px;
   margin-bottom: 50px;
   font-size: 10em;
   text-align: center;
@@ -29,6 +30,12 @@ html {
     clear: both;
     content: "";
     display: table; }
+  @media (min-width: 1001px) {
+    #mainer {
+      background-color: lightgreen; } }
+  @media (min-width: 1024px) {
+    #mainer {
+      background-color: lightblue; } }
 
 #rowOne, #rowTwo {
   float: left;

@@ -2,27 +2,34 @@
   font-family: 'Bebas';
   src: url(../fonts/Bebas/BEBAS___.ttf);
 }
+$bebas: 'Bebas';
 
 @import "bourbon/_bourbon.scss";
 @import "neat/_neat.scss";
-@import "includemedia.scss";
 
-$bebas: 'Bebas';
+@import "includemedia.scss";
+$breakpoints: (phone: 1000px, tablet: 768px, desktop: 1024px);
 
 
 #head {
+  margin-top: 0px;
   margin-bottom: 50px;
   font-size: 10em;
   text-align: center;
   font-family: $bebas;
   border-bottom: 5px solid pink;
   @include span-columns(12 of 12);
-  
 }
 
 // start Neat grid
 #mainer{
   @include outer-container(400px);
+  @include media(">phone"){
+    background-color: lightgreen;
+  }
+  @include media("≥desktop"){
+    background-color: lightblue;
+  }
 }
 
 #rowOne, #rowTwo {
