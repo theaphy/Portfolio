@@ -9,12 +9,20 @@ html {
   box-sizing: inherit; }
 
 #head {
+  margin-bottom: 50px;
   font-size: 10em;
   text-align: center;
-  font-family: "Bebas"; }
+  font-family: "Bebas";
+  border-bottom: 5px solid pink;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  #head:last-child {
+    margin-right: 0; }
 
 #mainer {
-  max-width: 900px;
+  max-width: 400px;
   margin-left: auto;
   margin-right: auto; }
   #mainer::after {
@@ -22,75 +30,43 @@ html {
     content: "";
     display: table; }
 
-#rowOne, #rowTwo, #rowThree {
+#rowOne, #rowTwo {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 100%;
-  margin-top: 10px; }
-  #rowOne:last-child, #rowTwo:last-child, #rowThree:last-child {
+  width: 100%; }
+  #rowOne:last-child, #rowTwo:last-child {
     margin-right: 0; }
 
 #one, #two, #three, #four {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 23.23176%; }
+  width: 100%; }
   #one:last-child, #two:last-child, #three:last-child, #four:last-child {
     margin-right: 0; }
-  @media screen and (max-width: 1100px) {
-    #one, #two, #three, #four {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 100%; }
-      #one:last-child, #two:last-child, #three:last-child, #four:last-child {
-        margin-right: 0; } }
-
-#five, #six, #seven, #eight {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 23.23176%; }
-  #five:last-child, #six:last-child, #seven:last-child, #eight:last-child {
-    margin-right: 0; }
-  @media screen and (max-width: 1100px) {
-    #five, #six, #seven, #eight {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 100%; }
-      #five:last-child, #six:last-child, #seven:last-child, #eight:last-child {
-        margin-right: 0; } }
-
-#nine, #ten, #eleven, #twelve {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 23.23176%; }
-  #nine:last-child, #ten:last-child, #eleven:last-child, #twelve:last-child {
-    margin-right: 0; }
-  @media screen and (max-width: 1100px) {
-    #nine, #ten, #eleven, #twelve {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 100%; }
-      #nine:last-child, #ten:last-child, #eleven:last-child, #twelve:last-child {
-        margin-right: 0; } }
 
 .svgeez {
-  border: 5px solid lightblue;
   list-style: none;
-  margin-bottom: 30px; }
+  margin-bottom: 10px; }
 
 img {
-  width: 7em;
-  height: 7em;
-  padding: 20px;
+  float: left;
   margin-left: 0.5em;
-  width: 500px;
-  height: 500px; }
+  width: 10em;
+  height: 10em;
+  background-color: pink;
+  margin: 0px 10px 0px 20px;
+  border-radius: 50%;
+  border: 5px solid black; }
+
+.wurdz {
+  display: block;
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 20px;
+  font-family: "Bebas";
+  font-size: 6em; }
 
 #iconCreditLine {
   text-align: center;

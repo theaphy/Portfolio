@@ -5,62 +5,60 @@
 
 @import "bourbon/_bourbon.scss";
 @import "neat/_neat.scss";
+@import "includemedia.scss";
 
 $bebas: 'Bebas';
 
 
 #head {
+  margin-bottom: 50px;
   font-size: 10em;
   text-align: center;
   font-family: $bebas;
+  border-bottom: 5px solid pink;
+  @include span-columns(12 of 12);
+  
 }
 
 // start Neat grid
 #mainer{
-  @include outer-container(900px);
+  @include outer-container(400px);
 }
 
-#rowOne, #rowTwo, #rowThree {
+#rowOne, #rowTwo {
   @include span-columns(12 of 12);
-  margin-top: 10px;
 }
 
 #one, #two, #three, #four {
-  @include span-columns(3 of 12);
-  @media screen and (max-width: 1100px){
-    @include span-columns(12 of 12);
-  }
-}
-
-#five, #six, #seven, #eight {
-  @include span-columns(3 of 12);
-  @media screen and (max-width: 1100px){
-    @include span-columns(12 of 12);
-  }
-}
-
-#nine, #ten, #eleven, #twelve {
-  @include span-columns(3 of 12);
-  @media screen and (max-width: 1100px){
-    @include span-columns(12 of 12);
-  }
+  @include span-columns(12 of 12);
 }
 
 // start vector class styling
 .svgeez {
-  border: 5px solid lightblue;
   list-style: none;
-  margin-bottom: 30px;
-  
+  margin-bottom: 10px;
 }
 
+// vecetor style
 img {
-  width: 7em;
-  height: 7em;
-  padding: 20px;
+  float: left;
   margin-left: 0.5em;
-  width: 500px;
-  height: 500px;
+  width: 10em;
+  height: 10em;
+  background-color: pink;
+  margin: 0px 10px 0px 20px;
+  border-radius: 50%;
+  border: 5px solid black;
+}
+
+//vector label styling
+.wurdz {
+  display: block;
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 20px;
+  font-family: $bebas;
+  font-size: 6em;
 }
 
 //footer
