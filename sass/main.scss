@@ -1,12 +1,15 @@
+//fonts
 @font-face {
   font-family: 'Bebas';
   src: url(../fonts/Bebas/BEBAS___.ttf);
 }
 $bebas: 'Bebas';
 
+//bourbon/sass
 @import "bourbon/_bourbon.scss";
 @import "neat/_neat.scss";
 
+//media library
 @import "includemedia.scss";
 $breakpoints: (phone: 980px, tablet: 1000px, desktop: 988px);
 
@@ -25,51 +28,10 @@ $primarySkin: pink;
 // start Neat grid
 #mainer{
   @include outer-container(680px);
-  position: relative;
 }
 
 #rowOne, #rowTwo {
   @include span-columns(12 of 12);
-
-  //desktop breakpoint query
-  @include media("≥desktop"){
-    @include span-columns (6 of 12);
-
-    #head {
-      font-size: 6px;
-    
-    }
-
-    img {
-      width: 7em;
-      height: 7em;
-      background-color: lightgreen;
-      margin-left: 40px;
-      margin-right: 0px;
-    }
-
-    .wurdz {
-      text-align: center;
-      background-color: lightblue;
-      font-size: 4em;
-    }
-
-    .svgeez {
-    }
-
-    #one {
-    }
-
-    #two {
-    }
-
-    #three {
-    }
-
-    #four {
-    }
-
-  }
 }
 
 //out of desktop query
@@ -125,5 +87,53 @@ img {
   span {
     color: #add8e6;
   }
+}
+
+//desktop breakpoint query
+@include media("≥desktop"){
+  #head {
+    margin-top: 20px;
+    font-size: 7em;
+    background-image: url(../images/bigWaterTower.jpg);
+    background-size: 876px 318px;
+    background-repeat: false;
+    background-position: 0% 20%;
+  }
+
+  #head span {
+    margin-left: 200px;
+  }
+
+  #rowOne, #rowTwo {
+    @include span-columns (6 of 12);
+  }
+  
+  img {
+    width: 7em;
+    height: 7em;
+    margin-left: 40px;
+    margin-right: 0px;
+  }
+
+  .wurdz {
+    text-align: center;
+    font-size: 4em;
+  }
+
+  .svgeez {
+  }
+
+  #one {
+  }
+
+  #two {
+  }
+
+  #three {
+  }
+
+  #four {
+  }
+
 }
 
