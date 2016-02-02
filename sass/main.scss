@@ -8,8 +8,9 @@ $bebas: 'Bebas';
 @import "neat/_neat.scss";
 
 @import "includemedia.scss";
-$breakpoints: (phone: 1000px, tablet: 768px, desktop: 1024px);
+$breakpoints: (phone: 980px, tablet: 1000px, desktop: 988px);
 
+$primarySkin: pink;
 
 #head {
   margin-top: 0px;
@@ -17,23 +18,51 @@ $breakpoints: (phone: 1000px, tablet: 768px, desktop: 1024px);
   font-size: 10em;
   text-align: center;
   font-family: $bebas;
-  border-bottom: 5px solid pink;
+  border-bottom: 6px solid $primarySkin;
   @include span-columns(12 of 12);
 }
 
 // start Neat grid
 #mainer{
-  @include outer-container(400px);
-  @include media(">phone"){
-    background-color: lightgreen;
-  }
+  @include outer-container(800px);
   @include media("≥desktop"){
-    background-color: lightblue;
+
   }
 }
 
 #rowOne, #rowTwo {
   @include span-columns(12 of 12);
+  @include media("≥desktop"){
+    @include span-columns (6 of 12);
+
+    img {
+      width: 10em;
+      height: 10em;
+    }
+
+    #one {
+      img {
+      
+      margin-left: 0px;
+      }
+    }
+
+    #two {
+      img {
+       
+      }
+    }
+
+    #three {
+    }
+
+    #four {
+    }
+
+    .wurdz {
+        font-size: 6em;
+    }
+  }
 }
 
 #one, #two, #three, #four {
@@ -46,14 +75,18 @@ $breakpoints: (phone: 1000px, tablet: 768px, desktop: 1024px);
   margin-bottom: 10px;
 }
 
-// vecetor style
+
+
+
+
+// vector style
 img {
   float: left;
   margin-left: 0.5em;
-  width: 10em;
-  height: 10em;
-  background-color: pink;
-  margin: 0px 10px 0px 20px;
+  width: 14em;
+  height: 14em;
+  background-color: $primarySkin;
+  margin: 0px 10px 20px 0px;
   border-radius: 50%;
   border: 5px solid black;
 }
@@ -65,7 +98,7 @@ img {
   margin-top: 10px;
   margin-left: 20px;
   font-family: $bebas;
-  font-size: 6em;
+  font-size: 9em;
 }
 
 //footer
