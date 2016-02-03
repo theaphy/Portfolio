@@ -14,28 +14,11 @@
 <!-- main circle-->
 <section id="mainer">
   <h1 id="head"><span>TH</span></h1>
-  <section id="rowOne">
-    <div id="one" class="svgeez">
-      <a href="#"><img src="svgiconz/professional5.svg"></a>
-      <span class="wurdz" id="resume">CV</span>
-    </div>
-    <div id="two" class="svgeez">
-      <a href="#"><img src="svgiconz/man337.svg"></a>
-      <span class="wurdz" id="dev">DEV</span>
-    </div>
-  </section>
-  
-  <section id="rowTwo">
-    <div id="three" class="svgeez">
-      <a href="#"><img src="svgiconz/camera3.svg"></a>
-      <span class="wurdz" id="camera">IMG</span>
-    </div>
-    <div id="four" class="svgeez">
-      <a href="#"><img src="svgiconz/lover27.svg"></a>
-      <span class="wurdz" id="tatHeart">ME</span>
-    </div>
-  </section>
+
+  <ng-view></ng-view>
+
 </section>
+
 
 <footer>
   <div id="iconCreditLine">
@@ -43,15 +26,16 @@
   </div>
 </footer>
 
-<!-- 
-this block = CDN calls and local files for angular/jquery 
-cuz theyre being FBOIZ 
--->
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script> -->
-<script type="text/javascript" src="scripts/angular.js"></script>
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> -->
-<script type="text/javascript" src="scripts/jquery-1.11.3.js"></script>
-
+<!-- START DEPENDENCIES -->
+<!-- angular -->
+<script type="text/javascript" src="scripts/libraries/angular.js"></script>
+<script type="text/javascript" src="scripts/libraries/angular-route.js"></script>
+<!-- jquery -->
+<script type="text/javascript" src="scripts/libraries/jquery-1.11.3.js"></script>
+<!-- slick -->
+<script type="text/javascript" src="scripts/libraries/slick.min.js"></script>
+<!-- project scripts -->
+<script type="text/javascript" src="scripts/app.js"></script>
 <script type="text/javascript" src="scripts/index.js"></script>
 <script type="text/javascript" src="scripts/portController.js"></script>
 </body>
