@@ -117,7 +117,7 @@ html {
   #dctLander:last-child {
     margin-right: 0; }
 
-#dctHeader {
+.toggleHeads {
   float: left;
   display: block;
   margin-right: 2.35765%;
@@ -129,13 +129,8 @@ html {
   background-color: pink;
   font-family: "Bebas";
   color: black; }
-  #dctHeader:last-child {
+  .toggleHeads:last-child {
     margin-right: 0; }
-  #dctHeader a {
-    text-decoration: none;
-    color: black; }
-    #dctHeader a:visited {
-      color: black; }
 
 #stacksContainer {
   float: left;
@@ -190,6 +185,24 @@ html {
   width: 48.82117%;
   margin-top: 30px; }
   #lampStack:last-child {
+    margin-right: 0; }
+
+#aboutThisSite {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-left: 25.58941%; }
+  #aboutThisSite:last-child {
+    margin-right: 0; }
+
+#thisGit {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-left: 25.58941%; }
+  #thisGit:last-child {
     margin-right: 0; }
 
 #iconCreditLine {
