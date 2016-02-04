@@ -2,6 +2,10 @@
   font-family: 'Bebas';
   src: url(../fonts/Bebas/BEBAS___.ttf); }
 
+@font-face {
+  font-family: 'Caviar';
+  src: url(../fonts/CaviarDreams.ttf); }
+
 html {
   box-sizing: border-box; }
 
@@ -13,7 +17,7 @@ html {
   margin-bottom: 50px;
   font-size: 10em;
   text-align: center;
-  font-family: "Bebas";
+  font-family: "Caviar";
   border-bottom: 6px solid pink;
   float: left;
   display: block;
@@ -65,10 +69,12 @@ html {
 .wurdz {
   display: block;
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 30px;
   margin-left: 20px;
-  font-family: "Bebas";
-  font-size: 9em; }
+  font-family: "Caviar";
+  font-weight: bolder;
+  font-size: 9em;
+  text-transform: uppercase; }
 
 #homeButton {
   float: left;
@@ -92,7 +98,7 @@ html {
     margin-top: 3px;
     text-decoration: none;
     color: black;
-    font-family: "Bebas"; }
+    font-family: "Caviar"; }
 
 #resumeBox {
   margin-top: 0px;
@@ -103,6 +109,26 @@ html {
   height: 600px;
   margin-bottom: 30px; }
   #resumeBox:last-child {
+    margin-right: 0; }
+
+.expanded {
+  display: none; }
+
+.toggleHeads {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-left: 25.58941%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: pink;
+  font-family: "Caviar";
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold; }
+  .toggleHeads:last-child {
     margin-right: 0; }
 
 #dctLander {
@@ -117,19 +143,15 @@ html {
   #dctLander:last-child {
     margin-right: 0; }
 
-.toggleHeads {
+#dctAbout {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 48.82117%;
   margin-left: 25.58941%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-align: center;
-  background-color: pink;
-  font-family: "Bebas";
-  color: black; }
-  .toggleHeads:last-child {
+  font-family: "Caviar";
+  text-align: center; }
+  #dctAbout:last-child {
     margin-right: 0; }
 
 #stacksContainer {
@@ -154,7 +176,7 @@ html {
   padding-bottom: 10px;
   text-align: center;
   background-color: pink;
-  font-family: "Bebas";
+  font-family: "Caviar";
   color: black; }
   #stackHead:last-child {
     margin-right: 0; }
@@ -192,7 +214,9 @@ html {
   display: block;
   margin-right: 2.35765%;
   width: 48.82117%;
-  margin-left: 25.58941%; }
+  margin-left: 25.58941%;
+  font-family: "Caviar";
+  text-align: center; }
   #aboutThisSite:last-child {
     margin-right: 0; }
 
@@ -249,5 +273,7 @@ html {
     margin-left: 40px;
     margin-right: 0px; }
   .wurdz {
+    margin-top: 15px;
     text-align: center;
-    font-size: 4em; } }
+    font-size: 5em;
+    font-weight: bold; } }

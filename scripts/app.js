@@ -14,7 +14,7 @@ app.config(function($routeProvider) {
     	templateUrl: '../html/resumePDF.html'
     })
     .when('/myWork', {
-        
+        controller: 'myWorkCont',
         templateUrl: '../html/myWork.html'
     }).otherwise({
         templateUrl: 'home.html'

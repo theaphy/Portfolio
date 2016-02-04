@@ -5,6 +5,12 @@
 }
 $bebas: 'Bebas';
 
+@font-face {
+  font-family: 'Caviar';
+  src: url(../fonts/CaviarDreams.ttf);
+}
+$caviar: 'Caviar';
+
 //bourbon/sass
 @import "bourbon/_bourbon.scss";
 @import "neat/_neat.scss";
@@ -20,7 +26,7 @@ $skin: pink;
   margin-bottom: 50px;
   font-size: 10em;
   text-align: center;
-  font-family: $bebas;
+  font-family: $caviar;
   border-bottom: 6px solid $skin;
   @include span-columns(12 of 12);
 }
@@ -62,10 +68,12 @@ $skin: pink;
 .wurdz {
   display: block;
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 30px;
   margin-left: 20px;
-  font-family: $bebas;
+  font-family: $caviar;
+  font-weight: bolder;
   font-size: 9em;
+  text-transform: uppercase;
 }
 
 //home button
@@ -86,7 +94,7 @@ $skin: pink;
     margin-top: 3px;
     text-decoration: none;
     color: black;
-    font-family: $bebas;
+    font-family: $caviar;
   }
 }
 
@@ -99,12 +107,8 @@ $skin: pink;
 }
 
 //myWork
-#dctLander {
-  @include span-columns(12 of 12);
-  height: 400px;
-  margin-bottom: 50px;
-  border: 2px solid black;
-  padding: 5px;
+.expanded {
+  display: none;
 }
 
 .toggleHeads {
@@ -114,9 +118,29 @@ $skin: pink;
   padding-bottom: 10px;
   text-align: center;
   background-color: $skin;
-  font-family: $bebas;
+  font-family: $caviar;
   color: black;
+  text-transform: uppercase;
+  font-weight: bold;
 }
+
+#dctLander {
+  @include span-columns(12 of 12);
+  height: 400px;
+  margin-bottom: 50px;
+  border: 2px solid black;
+  padding: 5px;
+  
+}
+
+#dctAbout {
+  @include span-columns(6 of 12);
+  @include shift(3);
+  font-family: $caviar;
+  text-align: center;
+  
+}
+
 
 #stacksContainer {
   @include span-columns (12 of 12);
@@ -133,7 +157,7 @@ $skin: pink;
   padding-bottom: 10px;
   text-align: center;
   background-color: $skin;
-  font-family: $bebas;
+  font-family: $caviar;
   color: black;
 }
 
@@ -164,6 +188,8 @@ $skin: pink;
 #aboutThisSite {
   @include span-columns(6 of 12);
   @include shift(3);
+  font-family: $caviar;
+  text-align: center;
 }
 
 #thisGit {
@@ -228,8 +254,10 @@ $skin: pink;
   }
 
   .wurdz {
+    margin-top: 15px;
     text-align: center;
-    font-size: 4em;
+    font-size: 5em;
+    font-weight: bold;
   }
 
   .svgeez {
@@ -248,4 +276,3 @@ $skin: pink;
   }
 
 }
-
