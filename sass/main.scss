@@ -7,7 +7,7 @@ $bebas: 'Bebas';
 
 @font-face {
   font-family: 'Caviar';
-  src: url(../fonts/CaviarDreams.ttf);
+  src: url(../fonts/Caviar_Dreams_Bold.ttf);
 }
 $caviar: 'Caviar';
 
@@ -71,7 +71,6 @@ $skin: pink;
   margin-top: 30px;
   margin-left: 20px;
   font-family: $caviar;
-  font-weight: bold;
   font-size: 9em;
   text-transform: uppercase;
 }
@@ -107,9 +106,7 @@ $skin: pink;
 }
 
 //myWork
-.expanded {
-  display: none;
-}
+
 
 .toggleHeads {
   @include span-columns(6 of 12);
@@ -124,6 +121,15 @@ $skin: pink;
   font-weight: bold;
 }
 
+
+.abouts {
+  @include span-columns(6 of 12);
+  @include shift(3);
+  font-family: $caviar;
+  text-align: center;
+  
+}
+
 #dctLander {
   @include span-columns(12 of 12);
   height: 400px;
@@ -133,13 +139,12 @@ $skin: pink;
   
 }
 
-#dctAbout {
-  @include span-columns(6 of 12);
-  @include shift(3);
-  font-family: $caviar;
-  text-align: center;
-  
-}
+// #dctAbout {
+//   @include span-columns(6 of 12);
+//   @include shift(3);
+//   font-family: $caviar;
+//   text-align: center;
+// }
 
 
 #stacksContainer {
@@ -185,12 +190,12 @@ $skin: pink;
  
 }
 
-#aboutThisSite {
-  @include span-columns(6 of 12);
-  @include shift(3);
-  font-family: $caviar;
-  text-align: center;
-}
+// #aboutThisSite {
+//   @include span-columns(6 of 12);
+//   @include shift(3);
+//   font-family: $caviar;
+//   text-align: center;
+// }
 
 #thisGit {
   @include span-columns(6 of 12);
@@ -275,4 +280,8 @@ $skin: pink;
   #four {
   }
 
+}
+
+.none {
+  list-style: none;
 }

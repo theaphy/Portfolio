@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: 'Caviar';
-  src: url(../fonts/CaviarDreams.ttf); }
+  src: url(../fonts/Caviar_Dreams_Bold.ttf); }
 
 html {
   box-sizing: border-box; }
@@ -72,7 +72,6 @@ html {
   margin-top: 30px;
   margin-left: 20px;
   font-family: "Caviar";
-  font-weight: bold;
   font-size: 9em;
   text-transform: uppercase; }
 
@@ -111,9 +110,6 @@ html {
   #resumeBox:last-child {
     margin-right: 0; }
 
-.expanded {
-  display: none; }
-
 .toggleHeads {
   float: left;
   display: block;
@@ -131,6 +127,17 @@ html {
   .toggleHeads:last-child {
     margin-right: 0; }
 
+.abouts {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-left: 25.58941%;
+  font-family: "Caviar";
+  text-align: center; }
+  .abouts:last-child {
+    margin-right: 0; }
+
 #dctLander {
   float: left;
   display: block;
@@ -141,17 +148,6 @@ html {
   border: 2px solid black;
   padding: 5px; }
   #dctLander:last-child {
-    margin-right: 0; }
-
-#dctAbout {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 48.82117%;
-  margin-left: 25.58941%;
-  font-family: "Caviar";
-  text-align: center; }
-  #dctAbout:last-child {
     margin-right: 0; }
 
 #stacksContainer {
@@ -207,17 +203,6 @@ html {
   width: 48.82117%;
   margin-top: 30px; }
   #lampStack:last-child {
-    margin-right: 0; }
-
-#aboutThisSite {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 48.82117%;
-  margin-left: 25.58941%;
-  font-family: "Caviar";
-  text-align: center; }
-  #aboutThisSite:last-child {
     margin-right: 0; }
 
 #thisGit {
@@ -276,3 +261,6 @@ html {
     margin-top: 15px;
     text-align: center;
     font-size: 5em; } }
+
+.none {
+  list-style: none; }
