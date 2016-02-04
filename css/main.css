@@ -72,7 +72,7 @@ html {
   margin-top: 30px;
   margin-left: 20px;
   font-family: "Caviar";
-  font-weight: bolder;
+  font-weight: bold;
   font-size: 9em;
   text-transform: uppercase; }
 
@@ -275,5 +275,4 @@ html {
   .wurdz {
     margin-top: 15px;
     text-align: center;
-    font-size: 5em;
-    font-weight: bold; } }
+    font-size: 5em; } }
