@@ -129,6 +129,13 @@ $skin: pink;
   font-family: $caviar;
   text-align: center;
   display: none;
+  a{
+    text-decoration: none;
+    color: lightblue;
+    &:visited {
+      color: lightblue;
+    }
+  }
 }
 
 //myWork
@@ -200,6 +207,12 @@ $skin: pink;
   display: none;
 }
 
+#gitPic {
+  @include span-columns (2 of 12);
+  @include shift(5);
+  display: none;
+}
+
 //pictures partial
 #bot {
   @include span-columns(10 of 12);
@@ -232,7 +245,7 @@ $skin: pink;
 //stack learning links IMGs breakpoint
 @include media("<smallPhone"){
   #stacksContainer {
-    height: 50px;
+    height: 10px;
     img {
       display: none;
     }

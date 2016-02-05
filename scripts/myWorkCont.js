@@ -9,7 +9,6 @@ app.controller('myWorkCont', function($scope){
 			var p = "#" + trigger + " > p";
 			var img = "#" + trigger + " > img";
 			var sect = "#" + trigger + " > section";
-			
 			$(p + ", " + img + ", " + sect).slideToggle();
         });
 	};
