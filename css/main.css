@@ -88,6 +88,7 @@ html {
   font-size: 1.5em;
   background-color: pink;
   margin-bottom: 30px;
+  margin-top: 50px;
   border: 4px solid black; }
   #homeButton:last-child {
     margin-right: 0; }
@@ -114,13 +115,14 @@ html {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 48.82117%;
-  margin-left: 25.58941%;
+  width: 82.94039%;
+  margin-left: 8.5298%;
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
   background-color: pink;
   font-family: "Caviar";
+  font-size: 2em;
   color: black;
   text-transform: uppercase;
   font-weight: bold; }
@@ -131,10 +133,11 @@ html {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 48.82117%;
-  margin-left: 25.58941%;
+  width: 82.94039%;
+  margin-left: 8.5298%;
   font-family: "Caviar";
-  text-align: center; }
+  text-align: center;
+  display: none; }
   .abouts:last-child {
     margin-right: 0; }
 
@@ -142,11 +145,12 @@ html {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 100%;
-  height: 400px;
+  width: 82.94039%;
+  margin-left: 8.5298%;
+  height: 350px;
   margin-bottom: 50px;
-  border: 2px solid black;
-  padding: 5px; }
+  padding: 5px;
+  display: none; }
   #dctLander:last-child {
     margin-right: 0; }
 
@@ -154,47 +158,37 @@ html {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 100%;
+  width: 82.94039%;
+  margin-left: 8.5298%;
   margin-bottom: 50px;
-  border: 2px solid black;
   padding: 5px;
-  height: 300px; }
+  height: 300px;
+  background-color: gray;
+  display: none; }
   #stacksContainer:last-child {
     margin-right: 0; }
 
 #stackHead {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 48.82117%;
-  margin-left: 25.58941%;
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
   background-color: pink;
   font-family: "Caviar";
   color: black; }
-  #stackHead:last-child {
-    margin-right: 0; }
 
 .mean {
-  height: 100px;
-  width: 300px;
-  margin-left: 10px; }
-
-.top {
-  margin-bottom: 13px; }
-
-#meanStack {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 48.82117%;
-  margin-top: 30px; }
-  #meanStack:last-child {
+  width: 82.94039%;
+  margin-left: 8.5298%;
+  margin-left: 10px;
+  background-color: lightblue; }
+  .mean:last-child {
     margin-right: 0; }
-  #meanStack #express {
-    margin-top: 20px; }
+
+.top {
+  margin-bottom: 13px; }
 
 #lampStack {
   float: left;
@@ -210,8 +204,19 @@ html {
   display: block;
   margin-right: 2.35765%;
   width: 48.82117%;
-  margin-left: 25.58941%; }
+  margin-left: 25.58941%;
+  display: none; }
   #thisGit:last-child {
+    margin-right: 0; }
+
+#bot {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  margin-left: 8.5298%;
+  display: none; }
+  #bot:last-child {
     margin-right: 0; }
 
 #iconCreditLine {
@@ -261,6 +266,3 @@ html {
     margin-top: 15px;
     text-align: center;
     font-size: 5em; } }
-
-.none {
-  list-style: none; }

@@ -16,7 +16,12 @@ app.config(function($routeProvider) {
     .when('/myWork', {
         controller: 'myWorkCont',
         templateUrl: '../html/myWork.html'
-    }).otherwise({
+    })
+    .when('/cameras', {
+        controller: 'picturesCont',
+        templateUrl: '../html/pictures.html'
+    })
+    .otherwise({
         templateUrl: 'home.html'
     });
 });

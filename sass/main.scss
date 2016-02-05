@@ -86,6 +86,7 @@ $skin: pink;
   font-size: 1.5em;
   background-color: $skin;
   margin-bottom: 30px;
+  margin-top: 50px;
   border: 4px solid black;
   a {
     position: absolute;
@@ -106,16 +107,15 @@ $skin: pink;
 }
 
 //myWork
-
-
 .toggleHeads {
-  @include span-columns(6 of 12);
-  @include shift(3);
+  @include span-columns(10 of 12);
+  @include shift();
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
   background-color: $skin;
   font-family: $caviar;
+  font-size: 2em;
   color: black;
   text-transform: uppercase;
   font-weight: bold;
@@ -123,41 +123,33 @@ $skin: pink;
 
 
 .abouts {
-  @include span-columns(6 of 12);
-  @include shift(3);
+  @include span-columns(10 of 12);
+  @include shift();
   font-family: $caviar;
   text-align: center;
-  
+  display: none;
 }
 
 #dctLander {
-  @include span-columns(12 of 12);
-  height: 400px;
+  @include span-columns(10 of 12);
+  @include shift(1);
+  height: 350px;
   margin-bottom: 50px;
-  border: 2px solid black;
   padding: 5px;
-  
+  display: none;
 }
 
-// #dctAbout {
-//   @include span-columns(6 of 12);
-//   @include shift(3);
-//   font-family: $caviar;
-//   text-align: center;
-// }
-
-
 #stacksContainer {
-  @include span-columns (12 of 12);
+  @include span-columns (10 of 12);
+  @include shift(1);
   margin-bottom: 50px;
-  border: 2px solid black;
   padding: 5px;
   height: 300px;
+  background-color: gray;
+  display: none;
 }
 
 #stackHead {
-  @include span-columns(6 of 12);
-  @include shift(3);
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
@@ -167,9 +159,10 @@ $skin: pink;
 }
 
 .mean {
-  height: 100px;
-  width: 300px;
+  @include span-columns (10 of 12);
+  @include shift(1);
   margin-left: 10px;
+  background-color: lightblue;
 }
 
 .top {
@@ -177,11 +170,8 @@ $skin: pink;
 }
 
 #meanStack {
-  @include span-columns(6 of 12);
-  #express {
-    margin-top: 20px;
-  }
-  margin-top: 30px;
+  
+  
 }
 
 #lampStack {
@@ -200,6 +190,14 @@ $skin: pink;
 #thisGit {
   @include span-columns(6 of 12);
   @include shift(3);
+  display: none;
+}
+
+//pictures
+#bot {
+  @include span-columns(10 of 12);
+  @include shift(1);
+  display: none;
 }
 
 //footer
@@ -280,8 +278,4 @@ $skin: pink;
   #four {
   }
 
-}
-
-.none {
-  list-style: none;
 }
