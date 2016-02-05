@@ -17,7 +17,7 @@ $caviar: 'Caviar';
 
 //media library
 @import "includemedia.scss";
-$breakpoints: (phone: 980px, tablet: 1000px, desktop: 988px);
+$breakpoints: (smallPhone: 700px, phone: 980px, tablet: 1000px, desktop: 988px);
 
 $skin: pink;
 
@@ -31,12 +31,13 @@ $skin: pink;
   @include span-columns(12 of 12);
 }
 
-// start Neat grid
+// start Neat grid 
 #mainer{
   @include outer-container(680px);
   margin-bottom: 60px;
 }
 
+//neat for landing/menu page
 #rowOne, #rowTwo {
   @include span-columns(12 of 12);
 }
@@ -46,13 +47,13 @@ $skin: pink;
   @include span-columns(12 of 12);
 }
 
-// start vector class styling
+// vector class styling
 .svgeez {
   list-style: none;
   margin-bottom: 10px;
 }
 
-// vector style
+// vectos
 .landingCircles {
   float: left;
   margin-left: 0.5em;
@@ -98,7 +99,7 @@ $skin: pink;
   }
 }
 
-//resumePDF
+//resumePDF partial
 #resumeBox {
   margin-top: 0px;
   @include span-columns(12 of 12);
@@ -106,7 +107,7 @@ $skin: pink;
   margin-bottom: 30px;
 }
 
-//myWork
+//toggle heads
 .toggleHeads {
   @include span-columns(10 of 12);
   @include shift();
@@ -121,7 +122,7 @@ $skin: pink;
   font-weight: bold;
 }
 
-
+//about paragraphs
 .abouts {
   @include span-columns(10 of 12);
   @include shift();
@@ -130,6 +131,8 @@ $skin: pink;
   display: none;
 }
 
+//myWork
+//detroit community table
 #dctLander {
   @include span-columns(10 of 12);
   @include shift(1);
@@ -139,61 +142,65 @@ $skin: pink;
   display: none;
 }
 
+//this site
+
+//learning
 #stacksContainer {
   @include span-columns (10 of 12);
-  @include shift(1);
+  @include shift();
   margin-bottom: 50px;
-  padding: 5px;
   height: 300px;
-  background-color: gray;
   display: none;
 }
 
-#stackHead {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-align: center;
-  background-color: $skin;
-  font-family: $caviar;
-  color: black;
-}
-
 .mean {
-  @include span-columns (10 of 12);
-  @include shift(1);
-  margin-left: 10px;
-  background-color: lightblue;
-}
-
-.top {
-  margin-bottom: 13px;
+  width: 270px;
 }
 
 #meanStack {
-  
+  @include span-columns (6 of 12);
   
 }
 
-#lampStack {
-  @include span-columns(6 of 12);
+#rower {
+  @include row();
+}
+
+.virtual {
+  height: 50px;
+  width: 50px;
+}
+
+#vr {
+  @include span-columns (6 of 12);
+  margin-top: 40px;
+}
+
+#moz {
+  @include span-columns (12 of 12);
+  height: 80px;
+}
+
+#google {
+  @include span-columns (6 of 12);
+  height: 90px;
+  width: 134px;
   margin-top: 30px;
- 
 }
 
-// #aboutThisSite {
-//   @include span-columns(6 of 12);
-//   @include shift(3);
-//   font-family: $caviar;
-//   text-align: center;
-// }
+#youtube {
+  @include span-columns (6 of 12);
+  height: 150px;
+}
 
+// see the code
 #thisGit {
-  @include span-columns(6 of 12);
+  @include span-columns (6 of 12);
   @include shift(3);
   display: none;
 }
 
-//pictures
+//pictures partial
 #bot {
   @include span-columns(10 of 12);
   @include shift(1);
@@ -219,6 +226,16 @@ $skin: pink;
 
   span {
     color: #add8e6;
+  }
+}
+
+//stack learning links IMGs breakpoint
+@include media("<smallPhone"){
+  #stacksContainer {
+    height: 50px;
+    img {
+      display: none;
+    }
   }
 }
 

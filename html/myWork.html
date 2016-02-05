@@ -8,24 +8,31 @@
 	
 </div>
 
+<!-- this site -->
+<div id="siteAbout" ng-click="reveal('siteAbout')">
+	<h2 class="toggleHeads" id="thisSiteHead">This Site</h2>
+	<p id="aboutThisSite" class="abouts">This site was built with Gulp taskrunners, Sass for a preprocessor, and Bourbon's Neat grid for an easily maintainable grid that lives in the CSS.  It lives in a single-page AngularJS app and relies on jQuery for its user-generated actions.</p>
+</div>
+
 <!-- learning-->
 <div id="stackBox" ng-click="reveal('stackBox')">
-	<h2 id="stackHead" class="toggleHeads">Learning!</h2>
+	<h2 id="learning" class="toggleHeads">Learning!</h2>
 	<p id="learningAbout" class="abouts">Learning is tite</p>
 	<section id="stacksContainer">
 		<div id="meanStack">
 			<img class="mean" src="../images/stacks/MongoDB-Logo.svg">
-			<img id="express" class="mean" src="../images/stacks/express.svg">
+			<img class="mean" src="../images/stacks/express.svg">
 			<img class="mean" src="../images/stacks/AngularJS_logo.svg">
 			<img class="mean" src="../images/stacks/nodejs-light.svg">
 		</div>
+		<div id="vr">
+			<div id="rower">
+				<img id="google" class="virtual" src="../images/webVR/google.png">
+				<img id="youtube" class="virtual" src="../images/webVR/youtube.png">
+			</div>
+			<img id="moz" class="virtual" src="../images/webVR/moz.png">
+		</div>
 	</section>
-</div>
-
-<!-- this site -->
-<div id="siteAbout" ng-click="reveal('siteAbout')">
-	<h2 class="toggleHeads" id="thisSiteHead">This Site</h2>
-	<p id="aboutThisSite" class="abouts">This site was built with: Gulp, Sass, Bourbon/Neat, Jquery, and AngularJS.</p>
 </div>
 
 <!-- github -->
