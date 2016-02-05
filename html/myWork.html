@@ -9,27 +9,27 @@
 </div>
 
 <!-- learning-->
-<div id="stackBox">
+<div id="stackBox" ng-click="reveal('stackBox')">
 	<h2 id="stackHead" class="toggleHeads">Learning!</h2>
 	<p id="learningAbout" class="abouts">Learning is tite</p>
-	<div id="stacksContainer">
+	<section id="stacksContainer">
 		<div id="meanStack">
 			<img class="mean" src="../images/stacks/MongoDB-Logo.svg">
 			<img id="express" class="mean" src="../images/stacks/express.svg">
 			<img class="mean" src="../images/stacks/AngularJS_logo.svg">
 			<img class="mean" src="../images/stacks/nodejs-light.svg">
 		</div>
-	</div>
+	</section>
 </div>
 
 <!-- this site -->
-<div>
+<div id="siteAbout" ng-click="reveal('siteAbout')">
 	<h2 class="toggleHeads" id="thisSiteHead">This Site</h2>
 	<p id="aboutThisSite" class="abouts">This site was built with: Gulp, Sass, Bourbon/Neat, Jquery, and AngularJS.</p>
 </div>
 
 <!-- github -->
-<div>
+<div id="gitty" ng-click="reveal('gitty')">
 	<h2 class="toggleHeads" id="gitShow">See the Code</h2>
 	<p id="thisGit">GitHub</p>
 </div>
