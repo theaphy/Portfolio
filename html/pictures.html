@@ -1,7 +1,30 @@
 <div id="banking">
-	<h2 id="bankHead" class="toggleHeads">Banking on Trust</h2>
+	<h2 id="bankHead" class="toggleHeads" ng-click="reveal('bankHead')">Banking on Trust</h2>
 	<p id="botAbout" class="abouts">This is a documental.</p>
 	<iframe id="bot" class="" src="https://player.vimeo.com/video/35612754?title=0&byline=0&portrait=0"  height="320" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+
+<div id="photog">
+	<h2 id="personalPics" class="toggleHeads" ng-click="reveal('personalPics')">Personal Photography</h2>
+	<p id="botAbout" class="abouts">Pictures I've taken of people and places over the years. Some digital, some analog</p>
+	<div class="slickCarousel" id="slickPics">
+		<div>
+			<img class="caroPics" src="images/panda.jpg">
+		</div>
+		<div>
+			<img class="caroPics" src="http://placehold.it/200/300">
+		</div>
+		<div>
+			<img class="caroPics" src="images/woody.jpg">
+		</div>
+		<div>
+			<img class="caroPics" src="http://placehold.it/200/300">
+		</div>
+		<div>
+			<img class="caroPics" src="images/bigWaterTower.jpg">
+		</div>
+	</div>
+	
 </div>
 
 

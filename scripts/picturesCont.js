@@ -2,17 +2,17 @@ var app = angular.module('port');
 
 app.controller('picturesCont', function($scope){ 
 
-	//JQUERYYYYYYYYYYYY!!!!!!!!!!!!
-	$(document).ready(function(){
-		$("#bankHead").click(function(){
-	        $("#botAbout").slideToggle();
-	        $("#bot").slideToggle();
-	    });
-
-	    $("#stackHead").click(function(){
-	    	$("#learningAbout").slideToggle();
-	    	$("#stacksContainer").slideToggle();
-	    });
-	});
+	//function that tiggles the triggerHead content (lol tiggles)
+	$scope.reveal = function(trigger) {
+		$(function() {
+			$("#" + trigger + "").siblings().slideToggle();
+        });
+	};	
 	
+	$('.slickCarousel').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 2000,
+	});
 });

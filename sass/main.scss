@@ -201,10 +201,17 @@ $skin: pink;
 }
 
 // see the code
-#thisGit {
-  @include span-columns (6 of 12);
-  @include shift(3);
+#gitLink {
+  @include span-columns (2 of 12);
+  @include shift(5);
+  text-decoration: none;
+  text-align: center;
+  margin-top: 10px;
+  color: black;
   display: none;
+  &:visited {
+    color: black;
+  }
 }
 
 #gitPic {
@@ -218,6 +225,18 @@ $skin: pink;
   @include span-columns(10 of 12);
   @include shift(1);
   display: none;
+}
+
+#slickPics {
+  @include span-columns(6 of 12);
+  @include shift(3);
+  background-color: lightgreen;
+  display: none;
+}
+
+.caroPics {
+  width: 320px;
+  height: 200px;
 }
 
 //footer

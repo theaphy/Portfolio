@@ -231,15 +231,21 @@ html {
   #youtube:last-child {
     margin-right: 0; }
 
-#thisGit {
+#gitLink {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 48.82117%;
-  margin-left: 25.58941%;
+  width: 14.70196%;
+  margin-left: 42.64902%;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 10px;
+  color: black;
   display: none; }
-  #thisGit:last-child {
+  #gitLink:last-child {
     margin-right: 0; }
+  #gitLink:visited {
+    color: black; }
 
 #gitPic {
   float: left;
@@ -260,6 +266,21 @@ html {
   display: none; }
   #bot:last-child {
     margin-right: 0; }
+
+#slickPics {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-left: 25.58941%;
+  background-color: lightgreen;
+  display: none; }
+  #slickPics:last-child {
+    margin-right: 0; }
+
+.caroPics {
+  width: 320px;
+  height: 200px; }
 
 #iconCreditLine {
   text-align: center;

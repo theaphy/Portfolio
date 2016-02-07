@@ -1,21 +1,21 @@
 <!-- my work partial -->
 
 <!-- DCT --> 
-<div id="dct" ng-click="reveal('dct')">
-	<h2 id="dctHeader" class="toggleHeads">Detroit Community Table</h2>
+<div id="dct">
+	<h2 id="dctHeader" class="toggleHeads" ng-click="reveal('dctHeader')">Detroit Community Table</h2>
 	<p  id="dctAbout" class="abouts">This is the final project my group produced for our JavaScript bootcamp at Grand Circus Detroit. Everyday at lunch we would trade restaurant recommendations, which we then, of course, forgot by the next day. We decided to build a Detroit specific app that allowed a user to save recomendations and search local restaurants.</p>
 	<img id="dctLander" class="" src="../images/dct.jpg"/>
 </div>
 
 <!-- this site -->
-<div id="siteAbout" ng-click="reveal('siteAbout')">
-	<h2 class="toggleHeads" id="thisSiteHead">This Site</h2>
+<div id="siteAbout">
+	<h2 class="toggleHeads" id="thisSiteHead" ng-click="reveal('thisSiteHead')">This Site</h2>
 	<p id="aboutThisSite" class="abouts">This site was built with Gulp taskrunners, Sass for a preprocessor, and Bourbon's Neat grid for an easily maintainable grid that lives in the CSS.  It lives in a single-page AngularJS app and relies on jQuery for its user-generated actions.</p>
 </div>
 
 <!-- learning-->
-<div id="stackBox" ng-click="reveal('stackBox')">
-	<h2 id="learning" class="toggleHeads">Learning</h2>
+<div id="stackBox">
+	<h2 id="learning" class="toggleHeads" ng-click="reveal('learning')">Learning</h2>
 	<p id="learningAbout" class="abouts">I have about ten percent of the cool code skills that I hope to eventually possess. Right now, I'm working through an <a href="">edX course</a> on the MEAN stack so I can become a full-stack engineer. I am also slowly learning to shoot, edit, and host 360/VR video on the web with <a href="http://mozvr.com/">this</a>, <a href="https://www.youtube.com/channel/UCzuqhhs6NWbgTzMuM09WKDQ">this</a>, and <a href="https://www.google.com/get/cardboard/">this</a>.</p>
 	<section id="stacksContainer">
 		<div id="meanStack">
@@ -35,11 +35,10 @@
 </div>
 
 <!-- github -->
-<div id="gitty" ng-click="reveal('gitty')">
-	<h2 class="toggleHeads" id="gitShow">See the Code</h2>
-	<a href="https://github.com/theaphy">
-		<img id="gitPic" src="../svgiconz/social-network363.svg">
-	</a>
+<div id="gitty">
+	<h2 class="toggleHeads" id="gitShow" ng-click="reveal('gitShow')">See the Code</h2>
+	<img id="gitPic" src="../svgiconz/social-network363.svg">
+	<a id="gitLink" class="abouts" href="https://github.com/theaphy">GitHub</a>
 </div>
 
 <!-- home button -->
