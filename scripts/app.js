@@ -21,6 +21,10 @@ app.config(function($routeProvider) {
         controller: 'picturesCont',
         templateUrl: '../html/pictures.html'
     })
+    .when('/me', {
+        controller: 'meCont',
+        templateUrl: '../html/me.html'
+    })
     .otherwise({
         templateUrl: 'home.html'
     });
