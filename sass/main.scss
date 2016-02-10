@@ -17,7 +17,7 @@ $caviar: 'Caviar';
 
 //media library
 @import "includemedia.scss";
-$breakpoints: (smallPhone: 700px, phone: 980px, tablet: 1000px, desktop: 988px);
+$breakpoints: (smallPhone: 700px, desktop: 1000px);
 
 $skin: pink;
 
@@ -83,10 +83,13 @@ $skin: pink;
   text-transform: uppercase;
 }
 
-//home button
-#homeButton {
-  @include span-columns(1 of 12);
-  @include shift(5);
+//move buttons
+#moveRow {
+   @include shift(4);
+}
+
+#nav, #next {
+  @include span-columns(2);
   background-color: lightgreen;
   width: 100px;
   height: 100px;
@@ -98,11 +101,45 @@ $skin: pink;
   border: 4px solid black;
   a {
     position: absolute;
-    margin-left: 18px;
-    margin-top: 3px;
+    margin-left: 22px;
+    margin-top: 5px;
     text-decoration: none;
     color: black;
     font-family: $caviar;
+  }
+}
+
+// begin footer
+//social row
+#socialRow {
+  @include span-columns(4 of 12);
+  @include shift(4);
+  text-align: center;
+  .sosh {
+  height: 2em;
+  width: 2em;
+  }
+}
+
+//creditline
+#iconCreditLine {
+  text-align: center;
+  font-size: 0.3em;
+  font-family: helvetica;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  padding: 10px;
+  border-radius: 10%;
+  clear: both;
+  a {
+    text-decoration: none;
+    color: #ff8b94;
+  }
+
+  span {
+    color: #add8e6;
   }
 }
 
@@ -165,6 +202,16 @@ $skin: pink;
   margin-bottom: 50px;
   height: 300px;
   display: none;
+}
+
+#learningAbout {
+  a {
+    color: lightblue;
+    &:visited {
+      color: lightblue;
+    }
+  }
+
 }
 
 .mean {
@@ -246,28 +293,6 @@ $skin: pink;
   height: 200px;
 }
 
-//footer
-#iconCreditLine {
-  text-align: center;
-  font-size: 0.3em;
-  font-family: helvetica;
-  width: 40%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
-  padding: 10px;
-  border-radius: 10%;
-
-  a {
-    text-decoration: none;
-    color: #ff8b94;
-  }
-
-  span {
-    color: #add8e6;
-  }
-}
-
 //smallll phones
 @include media("<smallPhone"){
   //stack learning links IMGs breakpoint
@@ -292,8 +317,20 @@ $skin: pink;
   }
 }
 
+//retina phones
+@media only screen and (max-device-width: 667px) 
+       and (-webkit-device-pixel-ratio: 2) {
+        .toggleHeads {
+        background-color: lightgreen;
+        }
+       }
+
 //desktop breakpoint query
 @include media("≥desktop"){
+  #mainer {
+    @include outer-container(800px);
+  }
+
   #head {
     // position: relative;
     margin-top: 20px;
@@ -322,7 +359,7 @@ $skin: pink;
   .landingCircles {
     width: 7em;
     height: 7em;
-    margin-left: 15px;
+    margin-left: 50px;
     margin-right: 0px;
   }
 
@@ -350,13 +387,7 @@ $skin: pink;
 
 }
 
-//retina phones
-@media only screen and (max-device-width: 667px) 
-       and (-webkit-device-pixel-ratio: 2) {
-        .toggleHeads {
-        background-color: lightgreen;
-      }
-       }
+
 
       
     

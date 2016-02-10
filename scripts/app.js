@@ -5,7 +5,7 @@ app.config(function($routeProvider) {
         
         templateUrl: '../html/home.html'
     })
-    .when('/home', {
+    .when('/nav', {
         
         templateUrl: '../html/home.html'
     })
@@ -28,4 +28,13 @@ app.config(function($routeProvider) {
     .otherwise({
         templateUrl: 'home.html'
     });
+});
+
+app.directive('targetBlank', function() {
+  return {
+    compile: function(element) {
+      var elems = (element.prop("tagName") === 'A') ? element : element.find('a');
+      elems.attr("target", "_blank");
+    }
+  };
 });

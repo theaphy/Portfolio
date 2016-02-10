@@ -16,3 +16,12 @@ app.controller('picturesCont', function($scope){
 		autoplaySpeed: 2000,
 	});
 });
+
+app.directive('targetBlank', function() {
+  return {
+    compile: function(element) {
+      var elems = (element.prop("tagName") === 'A') ? element : element.find('a');
+      elems.attr("target", "_blank");
+    }
+  };
+});

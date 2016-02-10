@@ -80,12 +80,14 @@ html {
   font-size: 6em;
   text-transform: uppercase; }
 
-#homeButton {
+#moveRow {
+  margin-left: 34.11922%; }
+
+#nav, #next {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 6.17215%;
-  margin-left: 42.64902%;
+  width: 14.70196%;
   background-color: lightgreen;
   width: 100px;
   height: 100px;
@@ -95,15 +97,45 @@ html {
   margin-bottom: 30px;
   margin-top: 50px;
   border: 4px solid black; }
-  #homeButton:last-child {
+  #nav:last-child, #next:last-child {
     margin-right: 0; }
-  #homeButton a {
+  #nav a, #next a {
     position: absolute;
-    margin-left: 18px;
-    margin-top: 3px;
+    margin-left: 22px;
+    margin-top: 5px;
     text-decoration: none;
     color: black;
     font-family: "Caviar"; }
+
+#socialRow {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  margin-left: 34.11922%;
+  text-align: center; }
+  #socialRow:last-child {
+    margin-right: 0; }
+  #socialRow .sosh {
+    height: 2em;
+    width: 2em; }
+
+#iconCreditLine {
+  text-align: center;
+  font-size: 0.3em;
+  font-family: helvetica;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  padding: 10px;
+  border-radius: 10%;
+  clear: both; }
+  #iconCreditLine a {
+    text-decoration: none;
+    color: #ff8b94; }
+  #iconCreditLine span {
+    color: #add8e6; }
 
 #resumeBox {
   margin-top: 0px;
@@ -175,6 +207,11 @@ html {
   display: none; }
   #stacksContainer:last-child {
     margin-right: 0; }
+
+#learningAbout a {
+  color: lightblue; }
+  #learningAbout a:visited {
+    color: lightblue; }
 
 .mean {
   width: 270px; }
@@ -287,22 +324,6 @@ html {
   width: 320px;
   height: 200px; }
 
-#iconCreditLine {
-  text-align: center;
-  font-size: 0.3em;
-  font-family: helvetica;
-  width: 40%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
-  padding: 10px;
-  border-radius: 10%; }
-  #iconCreditLine a {
-    text-decoration: none;
-    color: #ff8b94; }
-  #iconCreditLine span {
-    color: #add8e6; }
-
 @media (max-width: 699px) {
   #stacksContainer {
     height: 10px; }
@@ -318,7 +339,19 @@ html {
     margin-bottom: 10px;
     margin-top: 20px; } }
 
-@media (min-width: 988px) {
+@media only screen and (max-device-width: 667px) and (-webkit-device-pixel-ratio: 2) {
+  .toggleHeads {
+    background-color: lightgreen; } }
+
+@media (min-width: 1000px) {
+  #mainer {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto; }
+    #mainer::after {
+      clear: both;
+      content: "";
+      display: table; }
   #head {
     margin-top: 20px;
     font-size: 7em;
@@ -343,13 +376,9 @@ html {
   .landingCircles {
     width: 7em;
     height: 7em;
-    margin-left: 15px;
+    margin-left: 50px;
     margin-right: 0px; }
   .wurdz {
     margin-top: 10px;
     text-align: center;
     font-size: 5em; } }
-
-@media only screen and (max-device-width: 667px) and (-webkit-device-pixel-ratio: 2) {
-  .toggleHeads {
-    background-color: lightgreen; } }
