@@ -24,7 +24,7 @@ $skin: pink;
 #head {
   margin-top: 0px;
   margin-bottom: 50px;
-  font-size: 10em;
+  font-size: 8em;
   text-align: center;
   font-family: $caviar;
   border-bottom: 6px solid $skin;
@@ -35,6 +35,12 @@ $skin: pink;
 #mainer{
   @include outer-container(680px);
   margin-bottom: 60px;
+  a {
+    color: black;
+    &:visited {
+      color: black;
+    }
+  }
 }
 
 //neat for landing/menu page
@@ -57,10 +63,11 @@ $skin: pink;
 .landingCircles {
   float: left;
   margin-left: 0.5em;
-  width: 14em;
-  height: 14em;
+  width: 10em;
+  height: 10em;
   background-color: $skin;
-  margin: 0px 30px 0px 80px;
+  margin-right: 30px;
+  margin-left: 20%;
   border-radius: 50%;
   border: 5px solid black;
 }
@@ -70,9 +77,9 @@ $skin: pink;
   display: block;
   display: inline-block;
   margin-top: 30px;
-  margin-left: 20px;
+  margin-left: 10px;
   font-family: $caviar;
-  font-size: 9em;
+  font-size: 6em;
   text-transform: uppercase;
 }
 
@@ -261,13 +268,27 @@ $skin: pink;
   }
 }
 
-//stack learning links IMGs breakpoint
+//smallll phones
 @include media("<smallPhone"){
+  //stack learning links IMGs breakpoint
   #stacksContainer {
     height: 10px;
     img {
       display: none;
     }
+  }
+
+  .landingCircles {
+    width: 7em;
+    height: 7em;
+    margin-top: 10px;
+    margin-left: 15%;
+  }
+
+  .wurdz {
+    font-size: 5em;
+    margin-bottom: 10px;
+    margin-top: 20px;
   }
 }
 
@@ -286,8 +307,8 @@ $skin: pink;
 
   #head span {
     position: absolute;
-    margin-left: 50px;
-    margin-top: 70px;
+    margin-left: 60px;
+    margin-top: 80px;
   }
 
   #mainer {
@@ -301,12 +322,12 @@ $skin: pink;
   .landingCircles {
     width: 7em;
     height: 7em;
-    margin-left: 40px;
+    margin-left: 15px;
     margin-right: 0px;
   }
 
   .wurdz {
-    margin-top: 15px;
+    margin-top: 10px;
     text-align: center;
     font-size: 5em;
     
@@ -336,6 +357,7 @@ $skin: pink;
         background-color: lightgreen;
       }
        }
+
       
     
 
