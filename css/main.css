@@ -81,7 +81,9 @@ html {
   text-transform: uppercase; }
 
 #moveRow {
-  margin-left: 34.11922%; }
+  margin-left: 34.11922%;
+  margin-top: 20px;
+  clear: both; }
 
 #nav, #next {
   float: left;
@@ -309,19 +311,32 @@ html {
   #bot:last-child {
     margin-right: 0; }
 
+#pinkBox {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  margin-left: 8.5298%;
+  background-color: pink;
+  border: 4px solid black;
+  border-radius: 12%;
+  display: none; }
+  #pinkBox:last-child {
+    margin-right: 0; }
+
 #slickPics {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 48.82117%;
-  margin-left: 25.58941%;
-  background-color: lightgreen;
-  display: none; }
+  width: 65.88078%;
+  margin-left: 17.05961%;
+  margin-top: 20px;
+  margin-bottom: 20px; }
   #slickPics:last-child {
     margin-right: 0; }
 
 .caroPics {
-  width: 320px;
+  width: 390px;
   height: 200px; }
 
 @media (max-width: 699px) {
