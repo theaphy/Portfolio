@@ -7,6 +7,7 @@ var autoprefixer = require('gulp-autoprefixer');
 gulp.task('serve', ['sass', 'autopre'], function() {
 
     browserSync.init({
+        tunnel: true,
         server: "."
     });
 
