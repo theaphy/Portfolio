@@ -6,11 +6,14 @@ app.controller('myWorkCont', function($scope) {
 	$scope.reveal = function(trigger) {
 		$(function() {
 			$("#" + trigger + "").siblings().slideToggle();
+			$("#gitPic").slideToggle();
         });
 	};
 
 });
 
+
+//directive that 
 app.directive('targetBlank', function() {
   return {
     compile: function(element) {
